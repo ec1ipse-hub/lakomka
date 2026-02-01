@@ -1748,7 +1748,7 @@ body {
     }
 
     .counter-value {
-        font-size: 52px;
+        font-size: 35px;
     }
 
     .counter-value::after {
@@ -3299,5 +3299,6 @@ body {
         padding: 0 10px;
     }
 }
+
 
 /***********footer**********/
