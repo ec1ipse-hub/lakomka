@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лакомка</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-bg">
+            <section class="area">
+                <div class="nav">
+                    <div class="logo">
+                        <h1>лакомка</h1>
+                    </div>
+                    <div class="burger-menu" id="burgerMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="right-bar" id="rightBar">
+                        <div class="menu-nav">
+                            <li><a href="#page_home">Главная</a></li>
+                            <li><a href="#info_number_about">О нас</a></li>
+                            <li><a href="#our_confectioner">Кондитеры</a></li>
+                            <li><a href="#our_sets">Скидки</a></li>
+                            <li><a href="#order_cake_form">Заказ</a></li>
+                            <li>
+                                <a href="#" onclick="openSearchModal(); return false;">Поиск</a>
+                            </li>
+                            <div id="searchModal" class="search-modal">
+                                <div class="search-modal-content">
+                                    <button class="close-modal" onclick="closeSearchModal()">&times;</button>
+                                    <input type="text" class="search-input" placeholder="Что ищем?">
+                                    <button class="search-button">Найти</button>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <li><a href="#" class="number"><i class="bi bi-telephone-fill"></i>+7 (111) 222 33
+                                        44</a>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+    <main>
+        <section class="page_home" id="page_home">
+            <div class="page">
+                <div class="home_content">
+                    <div class="home_name">лакомка</div>
+                    <div class="home_text">
+                        <p class="red_kroshka">Десерты, созданные с любовью</p>
+                        <p>Мы вкладываем душу в сладости, которые делают ваши моменты особенными</p>
+                    </div>
+                    <button class="home_action">Выбрать тортик</button>
+                </div>
+            </div>
+        </section>
+        <section class="area">
+            <section class="info_number_about" id="info_number_about">
+                <div class="title_about">
+                    <h1>лакомка</h1>
+                    <p>Кондитерская, где каждый десерт создается с любовью и вниманием к деталям</p>
+                </div>
+                <div class="counters-container">
+                    <div class="counter-card">
+                        <div class="counter-icon"></div>
+                        <div class="counter-value" id="counter1">0</div>
+                        <div class="counter-title">Лет дарим сладкие моменты</div>
+                    </div>
+
+                    <div class="counter-card">
+                        <div class="counter-icon"></div>
+                        <div class="counter-value" id="counter2">0</div>
+                        <div class="counter-title">Корпоративных клиентов</div>
+                    </div>
+
+                    <div class="counter-card">
+                        <div class="counter-icon"></div>
+                        <div class="counter-value" id="counter3">0</div>
+                        <div class="counter-title">Видов десертов в нашем меню</div>
+                    </div>
+
+                    <div class="counter-card">
+                        <div class="counter-icon"></div>
+                        <div class="counter-value" id="counter4">0</div>
+                        <div class="counter-title">Довольных гостей</div>
+                    </div>
+                </div>
+            </section>
+            <section class="category" id="category">
+                <div class="category_left">
+                    <div class="block_area_over">
+                        <div class="block_over">
+                            <div class="name_date">
+                                <a href="#">Категория 1</a>
+                                <time>13 дек 2021</time>
+                            </div>
+                            <div class="text_block">
+                                <h3>Каталог</h3>
+                                <p>Информация о категории</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block_area">
+                        <div class="block_rectangle">
+                            <div class="name_date">
+                                <a href="#">Категория 2</a>
+                                <time>13 дек 2021</time>
+                            </div>
+                            <div class="text_block">
+                                <h3>Новинки</h3>
+                                <p>Информация о категории</p>
+                            </div>
+                        </div>
+                        <div class="block_square">
+                            <div class="name_date">
+                                <a href="#">Категория 3</a>
+                            </div>
+                            <div class="text_block">
+                                <h3>Пирожные</h3>
+                            </div>
+                            <div class="name_date">
+                                <time>13 дек 2021</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block_area">
+                        <div class="block_square_bg">
+                            <div class="name_date">
+                                <a href="#">Категория 4</a>
+                            </div>
+                            <div class="text_block">
+                                <h3>Торты</h3>
+                            </div>
+                            <div class="name_date">
+                                <time>13 дек 2021</time>
+                            </div>
+                        </div>
+                        <div class="block_rectangle_container">
+                            <div class="block_rectangle_mini">
+                                <div class="name_date">
+                                    <a href="#">Категория 5</a>
+                                    <time>13 дек 2021</time>
+                                </div>
+                                <div class="text_block">
+                                    <h3>Праздничные торты</h3>
+                                </div>
+                            </div>
+                            <div class="block_rectangle_mini">
+                                <div class="name_date">
+                                    <a href="#">Категория 6</a>
+                                    <time>13 дек 2021</time>
+                                </div>
+                                <div class="text_block">
+                                    <h3>Классические торты</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block_area">
+                        <div class="block_rectangle">
+                            <div class="name_date">
+                                <a href="#">Категория 7</a>
+                                <time>13 дек 2021</time>
+                            </div>
+                            <div class="text_block">
+                                <h3>Наши ингредиенты</h3>
+                                <p>Информация о категории</p>
+                            </div>
+                        </div>
+                        <div class="block_square">
+                            <div class="name_date">
+                                <a href="#">Категория 8</a>
+                            </div>
+                            <div class="text_block">
+                                <h3>Качество и традиции</h3>
+                            </div>
+                            <div class="name_date">
+                                <time>13 дек 2021</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block_area">
+                        <div class="block_square">
+                            <div class="name_date">
+                                <a href="#">Категория 9</a>
+                            </div>
+                            <div class="text_block">
+                                <h3>Без сахара</h3>
+                            </div>
+                            <div class="name_date">
+                                <time>13 дек 2021</time>
+                            </div>
+                        </div>
+                        <div class="block_rectangle_container">
+                            <div class="block_rectangle_mini">
+                                <div class="name_date">
+                                    <a href="#">Категория 10</a>
+                                    <time>13 дек 2021</time>
+                                </div>
+                                <div class="text_block">
+                                    <h3>Ручная работа</h3>
+                                </div>
+                            </div>
+                            <div class="block_rectangle_mini">
+                                <div class="name_date">
+                                    <a href="#">Категория 11</a>
+                                    <time>13 дек 2021</time>
+                                </div>
+                                <div class="text_block">
+                                    <h3>Только лучшее</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category_right">
+                    <div class="news">
+                        <h3>Сладкие новости</h3>
+                        <div class="new_post">
+                            <a href="#">Новый сезонный торт "Зимняя сказка"</a>
+                            <time>13 дек 2021</time>
+                        </div>
+                        <div class="line"></div>
+                        <div class="new_post">
+                            <a href="#">Зимний фотоконкурс</a>
+                            <time>13 дек 2021</time>
+                        </div>
+                        <div class="line"></div>
+                        <div class="new_post">
+                            <a href="#">Бесплатная доставка в праздники</a>
+                            <time>13 дек 2021</time>
+                        </div>
+                    </div>
+                    <div class="subscribe">
+                        <div class="container">
+                            <div class="block_sub">Подписка на рассылку</div>
+                            <form>
+                                <input type="text" placeholder="Email@gmail.com">
+                                <button class="btn_subscribe" type="submit">Подписаться</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="information_about" id="information_about">
+                <div class="title_blocks_contetnt">
+                    <h2>Наши секреты</h2>
+                </div>
+                <div class="blocks">
+                    <div class="block">
+                        <div class="title_block_inform">
+                            <h3>Только натуральное</h3>
+                        </div>
+                        <div class="text_block_inform">
+                            <p>Мы не используем искусственные ароматизаторы,
+                                красители и консерванты.
+                                Наш фирменный вкус создают натуральные ваниль,
+                                свежие ягоды,
+                                отборные орехи и качественный шоколад.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="title_block_inform">
+                            <h3>Ручная работа</h3>
+                        </div>
+                        <div class="text_block_inform">
+                            <p>Каждый десерт создается вручную нашими кондитерами
+                                — от замеса теста до финального декора.
+                                Это гарантирует не только уникальный вид, но и особую,
+                                «живую» текстуру наших сладостей.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="title_block_inform">
+                            <h3>Творческий подход</h3>
+                        </div>
+                        <div class="text_block_inform">
+                            <p>Мы не боимся экспериментов!
+                                Наша команда постоянно создает новые вкусы и форматы,
+                                сочетая классические рецепты с современными трендами,
+                                чтобы радовать вас снова и снова.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="our_confectioner" id="our_confectioner">
+                <div class="title_our_confectioner">
+                    <h2>Наши кондитеры</h2>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="photo_card"><img src="img/2148028067.jpg"></div>
+                        <div class="name_card">Анна Медова</div>
+                        <div class="text_card">Шеф-кондитер, автор тортов</div>
+                        <div class="more"><a href="#">Подробнее</a></div>
+                    </div>
+                    <div class="card">
+                        <div class="photo_card"><img src="img/2150360213.jpg"></div>
+                        <div class="name_card">Анна Медова</div>
+                        <div class="text_card">Шеф-кондитер, автор тортов</div>
+                        <div class="more"><a href="#">Подробнее</a></div>
+                    </div>
+                    <div class="card">
+                        <div class="photo_card"><img src="img/33239.jpg"></div>
+                        <div class="name_card">Анна Медова</div>
+                        <div class="text_card">Шеф-кондитер, автор тортов</div>
+                        <div class="more"><a href="#">Подробнее</a></div>
+                    </div>
+                </div>
+            </section>
+            <section class="our_sets" id="our_sets">
+                <div class="title_our_sets">
+                    <h2>Наши наборы</h2>
+                </div>
+                <div class="sets">
+                    <div class="set">
+                        <div class="title_set_card">Мини-радость</div>
+                        <div class="price_set">3 200 ₽</div>
+                        <div class="info_set">
+                            <p>Торт на выбор</p>+<p>1 вид пирожных</p>+<p>15 конфет ручной работы</p>
+                        </div>
+                        <button class="btn_set" type="submit">Заказать</button>
+                    </div>
+                    <div class="set">
+                        <div class="title_set_card">Мини-радость</div>
+                        <div class="price_set">3 200 ₽</div>
+                        <div class="info_set">
+                            <p>Торт на выбор</p>+<p>1 вид пирожных</p>+<p>15 конфет ручной работы</p>
+                        </div>
+                        <button class="btn_set" type="submit">Заказать</button>
+                    </div>
+                    <div class="set">
+                        <div class="title_set_card">Мини-радость</div>
+                        <div class="price_set">3 200 ₽</div>
+                        <div class="info_set">
+                            <p>Торт на выбор</p>+<p>1 вид пирожных</p>+<p>15 конфет ручной работы</p>
+                        </div>
+                        <button class="btn_set" type="submit">Заказать</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="order_cake_form" id="order_cake_form">
+            <div class="order_cake_form_bg">
+                <section class="area">
+                    <div class="content_order_cake">
+                        <div class="text_order_cake">
+                            <div class="title_order_cake">
+                                <h2>Закажите торт со скидкой 25%</h2>
+                            </div>
+                            <div class="info_order_cake">Скидка на первый заказ до 31 марта</div>
+                        </div>
+                        <form action="">
+                            <input type="text" placeholder="Имя">
+                            <input type="text" placeholder="Телефон">
+                            <input type="text" placeholder="E-mail">
+                            <button class="btn_order_cake">Заказать тортик</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="area">
+            <div class="footer_content">
+                <div class="logo">
+                    <h1>лакомка</h1>
+                </div>
+                <div class="menu_footer">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Кондитеры</a></li>
+                    <li><a href="#">Скидки</a></li>
+                    <li><a href="#">Заказ</a></li>
+                    <li><a href="#">Поиск</a></li>
+                </div>
+                <div class="law_reserv">Все права защищены 2021</div>
+            </div>
+        </section>
+    </footer>
+    </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
