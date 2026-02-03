@@ -2807,7 +2807,7 @@ body {
 @media (min-width: 1280px) {
     .our_sets {
         padding: 100px 0;
-        height: auto;
+        height: 50vh;
     }
 
     .title_our_sets h2 {
@@ -3302,3 +3302,4 @@ body {
 
 
 /***********footer**********/
+
